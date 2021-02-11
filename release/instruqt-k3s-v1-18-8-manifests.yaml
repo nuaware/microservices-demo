@@ -223,6 +223,7 @@ spec:
       containers:
         - name: server
           image: gcr.io/google-samples/microservices-demo/frontend:v0.2.1
+          imagePullPolicy: IfNotPresent
           ports:
           - containerPort: 8080
           readinessProbe:
